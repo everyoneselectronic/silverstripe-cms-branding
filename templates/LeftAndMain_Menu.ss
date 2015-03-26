@@ -1,7 +1,7 @@
 <div class="cms-menu cms-panel cms-panel-layout west" id="cms-menu" data-layout-type="border">
 	<div class="cms-logo-header north">
 		<div class="cms-logo">
-			<a href="$ApplicationLink" target="_blank" title="$ApplicationName (Version - $CMSVersion)"<% if $SiteConfig.CustomCMSLogo %> style="background: url('{$SiteConfig.CustomCMSLogo.AbsoluteURL}')"<% end_if %>>
+			<a href="$ApplicationLink" target="_blank" title="$ApplicationName (Version - $CMSVersion)"<% if $SiteConfig.CustomCMSLogo %> style="background: url('{$SiteConfig.CustomCMSLogo.AbsoluteURL}') no-repeat left center;"<% end_if %>>
 				$ApplicationName <% if $CMSVersion %><abbr class="version">$CMSVersion</abbr><% end_if %>
 			</a>
 			<span><% if $SiteConfig %>$SiteConfig.Title<% else %>$ApplicationName<% end_if %></span>
